@@ -1,0 +1,13 @@
+# Simple "Hello World" in 3D using Python and the vpython library
+
+from vpython import *
+
+scene.title = "Hello World 3D"
+
+# Create a 3D text object
+label(pos=vector(0,0,0), text='Hello World', height=1, box=False, color=color.cyan)
+
+# Keep the window open
+while True:
+    rate(60)
+    
